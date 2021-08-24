@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Jean-Christophe Urbain</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/app.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav>
+    <div class="cv">
+      <div id="site_cache" class="site_cache"></div>
+      <div id="mobile">
         <ul>
+            <li>
+                <div id="close"><img src="./assets/times-solid.svg" alt="close"></div>
+            </li>
           <li>
             <a href=""><img src="" alt="home" /></a>
           </li>
@@ -29,363 +35,446 @@
             <a href="">CONTACT</a>
           </li>
         </ul>
-      </nav>
-      <h1>Jean-Christophe Urbain</h1>
-      <h2>DEVELOPPEUR FRONT-END</h2>
-    </header>
+      </div>
 
-    <section id="a_propos">
-      <h2>A PROPOS</h2>
-      <div class="a_propos">
-        <div class="profil">
-          <div class="photo">
-            <img src="" alt="photo" />
-          </div>
-          <div class="légende">
-            <p><strong>Nom : </strong>Jean-Christophe</p>
-            <p><strong>Age : </strong>35 ans</p>
-            <p><strong>Ville : </strong>Reims</p>
-            <p>
-              <strong>Hobbies : </strong>Musique, Informatique, Cuisine,
-              Bricolage
-            </p>
-            <div class="bouton">
-              <a href="">Me contacter</a>
-              <a href="">Télécharger mon CV</a>
+      <header>
+        <a id="toggle" class="toggle"><img src="./assets/bars-solid.svg" alt="toggle"></a>
+        <nav id="desktop">
+          <ul>
+            <li>
+              <a href=""><img src="" alt="home" /></a>
+            </li>
+            <li>
+              <a href="">A PROPOS</a>
+            </li>
+            <li>
+              <a href="">COMPETENCES</a>
+            </li>
+            <li>
+              <a href="">PARCOURS</a>
+            </li>
+            <li>
+              <a href="">REALISATIONS</a>
+            </li>
+            <li>
+              <a href="">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <h1>Jean-Christophe Urbain</h1>
+        <h2>DEVELOPPEUR FRONT-END</h2>
+      </header>
+
+      <section id="a_propos">
+        <div class="center">
+          <h2>A PROPOS</h2>
+          <div class="a_propos">
+            <div class="profil">
+              <div class="photo">
+                <img src="" alt="photo" />
+              </div>
+              <div class="légende">
+                <p><strong>Nom : </strong>Jean-Christophe</p>
+                <p><strong>Age : </strong>35 ans</p>
+                <p><strong>Ville : </strong>Reims</p>
+                <p>
+                  <strong>Hobbies : </strong>Musique, Informatique, Cuisine,
+                  Bricolage
+                </p>
+                <div class="bouton">
+                  <a href="">Me contacter</a>
+                  <a href="">Télécharger mon CV</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="description">
+              <p>
+                Après avoir travaillé une dizaine d’années dans le spectacle
+                vivant et l’animation socioculturelle, j’ai remis en question ma
+                vie professionnelle. En effet, à la suite d’une évolution de ma
+                vie familiale, je me suis rendu compte que ces deux vies
+                n’étaient pas en adéquation. Après un bilan de compétences, je
+                me suis révélé une appétence pour l’informatique.
+              </p>
+              <p>
+                J’ai choisi d’intégrer la Remise à Niveau et la découverte des
+                métiers de l’informatique du CESI pour essayer de répondre à mes
+                premières questions. Ces quatre mois de formation m’ont permis
+                de choisir entre le métier de technicien de maintenance
+                informatique et de développeur web. L’aspect créatif et le fait
+                de pouvoir travailler dans des petites structures ont fait
+                pencher la balance du côté du développement même si l’univers du
+                réseau m’a beaucoup intéressé. C’était une expérience riche et
+                qui m’a conforté dans mes choix de reconversion. Pendant ces
+                premiers mois de formation, j’ai effectué un stage afin de
+                pouvoir mettre en situation les acquis en entreprise. Pendant
+                mes années d’animateur socioculturel, j’ai tissé un fort réseau
+                dans le milieu culturel et de la communication. J’ai pu
+                travailler avec beaucoup de graphistes et d’entreprises
+                spécialisées dans la communication digitale. J’ai eu une très
+                bonne relation avec l’entreprise Retrokube. J’ai donc décidé
+                d’activer ce réseau et de les contacter pour effectuer ce stage
+                afin de valider ma formation de développeur web.
+              </p>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="description">
-          <p>
-            Après avoir travaillé une dizaine d’années dans le spectacle vivant
-            et l’animation socioculturelle, j’ai remis en question ma vie
-            professionnelle. En effet, à la suite d’une évolution de ma vie
-            familiale, je me suis rendu compte que ces deux vies n’étaient pas
-            en adéquation. Après un bilan de compétences, je me suis révélé une
-            appétence pour l’informatique.
-          </p>
-          <p>
-            J’ai choisi d’intégrer la Remise à Niveau et la découverte des
-            métiers de l’informatique du CESI pour essayer de répondre à mes
-            premières questions. Ces quatre mois de formation m’ont permis de
-            choisir entre le métier de technicien de maintenance informatique et
-            de développeur web. L’aspect créatif et le fait de pouvoir
-            travailler dans des petites structures ont fait pencher la balance
-            du côté du développement même si l’univers du réseau m’a beaucoup
-            intéressé. C’était une expérience riche et qui m’a conforté dans mes
-            choix de reconversion. Pendant ces premiers mois de formation, j’ai
-            effectué un stage afin de pouvoir mettre en situation les acquis en
-            entreprise. Pendant mes années d’animateur socioculturel, j’ai tissé
-            un fort réseau dans le milieu culturel et de la communication. J’ai
-            pu travailler avec beaucoup de graphistes et d’entreprises
-            spécialisées dans la communication digitale. J’ai eu une très bonne
-            relation avec l’entreprise Retrokube. J’ai donc décidé d’activer ce
-            réseau et de les contacter pour effectuer ce stage afin de valider
-            ma formation de développeur web.
-          </p>
+      <section id="competences">
+        <div class="center">
+          <h2>COMPETENCES</h2>
+          <div class="card">
+            <div class="frontend">
+              <h3>Front-end</h3>
+              <img src="" alt="frontend" />
+              <p>
+                Création et intégration de sites web et applications mobiles
+                responsive, accessibles et répondant aux normes W3C.
+              </p>
+              <div class="logo">
+                <ul>
+                  <li>
+                    <img src="" alt="html" />
+                    <p>HTML5</p>
+                  </li>
+                  <li>
+                    <img src="" alt="css" />
+                    <p>CSS3</p>
+                  </li>
+                  <li>
+                    <img src="" alt="sass" />
+                    <p>SASS</p>
+                  </li>
+                  <li>
+                    <img src="" alt="javascript" />
+                    <p>Javascript Vanilla</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="backend">
+              <h3>Back-end</h3>
+              <img src="" alt="backend" />
+              <p>
+                Notions en PHP procédural, création et gestion de base de
+                données et mise en ligne.
+              </p>
+              <div class="logo">
+                <ul>
+                  <li>
+                    <img src="" alt="php" />
+                    <p>PHP7</p>
+                  </li>
+                  <li>
+                    <img src="" alt="mysql" />
+                    <p>MySQL / Merise</p>
+                  </li>
+                  <li>
+                    <img src="" alt="ssh" />
+                    <p>SSH / FTP</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="CMS">
+              <h3>CMS</h3>
+              <img src="" alt="cms" />
+              <p>Création et édition de thèmes et plugins.</p>
+              <div class="logo">
+                <ul>
+                  <li>
+                    <img src="" alt="drupal" />
+                    <p>Drupal</p>
+                  </li>
+                  <li>
+                    <img src="" alt="Wordpress" />
+                    <p>Wordpress</p>
+                  </li>
+                  <li>
+                    <img src="" alt="joomla" />
+                    <p>Joomla</p>
+                  </li>
+                  <li>
+                    <img src="" alt="prestashop" />
+                    <p>Prestashop</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="webdesign">
+              <h3>Web design</h3>
+              <img src="" alt="webdesign" />
+              <p>
+                Création de maquettes XD et HTML, ainsi que de prototypes
+                fonctionnels. Conception centrée utilisateur selon les règles
+                d'UX lors de la création d'une interface utilisateur.
+              </p>
+              <div class="logo">
+                <ul>
+                  <li>
+                    <img src="" alt="xd" />
+                    <p>Adobe XD</p>
+                  </li>
+                  <li>
+                    <img src="" alt="photoshop" />
+                    <p>Photoshop</p>
+                  </li>
+                  <li>
+                    <img src="" alt="illustrator" />
+                    <p>Illustrator</p>
+                  </li>
+                  <li>
+                    <img src="" alt="première" />
+                    <p>Première</p>
+                  </li>
+                  <li>
+                    <img src="" alt="after effects" />
+                    <p>After Effects</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="environnement">
+              <h3>Environnement</h3>
+              <img src="" alt="environnement" />
+              <div class="details">
+                <img src="" alt="système" />
+                <p>
+                  <strong>Système d'éxploitation : </strong>Windows 10, Linux
+                  Ubuntu 20.04
+                </p>
+                <img src="" alt="work" />
+                <p>
+                  <strong>Work Flow : </strong>Git, WAMP, WinSCP, Chrome,
+                  Mozilla Firefox, Microsoft Edge
+                </p>
+                <img src="" alt="IDE" />
+                <p><strong>IDE : </strong>Visual Studio Code</p>
+                <img src="" alt="autres" />
+                <p>
+                  <strong>Autres compéences : </strong>Rédacteur web, SEO,
+                  Community Management
+                </p>
+                <img src="" alt="savoirs" />
+                <p>
+                  <strong>Savoir-être : </strong>Capacité d'apprentissage,
+                  Collaboration, Prise de décision, Organisation, Sens du
+                  service, Esprit d'équipe.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="competences">
-      <h2>COMPETENCES</h2>
-      <div class="card">
-        <div class="frontend">
-          <h3>Front-end</h3>
-          <img src="" alt="frontend" />
-          <p>
-            Création et intégration de sites web et applications mobiles
-            responsive, accessibles et répondant aux normes W3C.
-          </p>
-          <div class="logo">
-              <ul>
-                  <li>
-                      <img src="" alt="html">
-                      <p>HTML5</p>
-                  </li>
-                  <li>
-                      <img src="" alt="css">
-                      <p>CSS3</p>
-                  </li>
-                  <li>
-                      <img src="" alt="sass">
-                      <p>SASS</p>
-                  </li>
-                  <li>
-                      <img src="" alt="javascript">
-                      <p>Javascript Vanilla</p>
-                  </li>
-              </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="backend">
-          <h3>Back-end</h3>
-          <img src="" alt="backend" />
-          <p>
-            Notions en PHP procédural, création et gestion de base de données et mise en ligne.
-          </p>
-          <div class="logo">
-              <ul>
-                  <li>
-                      <img src="" alt="php">
-                      <p>PHP7</p>
-                  </li>
-                  <li>
-                      <img src="" alt="mysql">
-                      <p>MySQL / Merise</p>
-                  </li>
-                  <li>
-                      <img src="" alt="ssh">
-                      <p>SSH / FTP</p>
-                  </li>
-              </ul>
-          </div>
-        </div>
-      </div></div>
-      <div class="card">
-        <div class="CMS">
-          <h3>CMS</h3>
-          <img src="" alt="cms" />
-          <p>
-            Création et édition de thèmes et plugins.
-          </p>
-          <div class="logo">
-              <ul>
-                  <li>
-                      <img src="" alt="drupal">
-                      <p>Drupal</p>
-                  </li>
-                  <li>
-                      <img src="" alt="Wordpress">
-                      <p>Wordpress</p>
-                  </li>
-                  <li>
-                      <img src="" alt="joomla">
-                      <p>Joomla</p>
-                  </li>
-                  <li>
-                      <img src="" alt="prestashop">
-                      <p>Prestashop</p>
-                  </li>
-              </ul>
-          </div>
-        </div>
-      </div></div>
-      <div class="card">
-        <div class="webdesign">
-          <h3>Web design</h3>
-          <img src="" alt="webdesign" />
-          <p>
-            Création de maquettes XD et HTML, ainsi que de prototypes fonctionnels. Conception centrée utilisateur 
-            selon les règles d'UX lors de la création d'une interface utilisateur.
-          </p>
-          <div class="logo">
-              <ul>
-                  <li>
-                      <img src="" alt="xd">
-                      <p>Adobe XD</p>
-                  </li>
-                  <li>
-                      <img src="" alt="photoshop">
-                      <p>Photoshop</p>
-                  </li>
-                  <li>
-                      <img src="" alt="illustrator">
-                      <p>Illustrator</p>
-                  </li>
-                  <li>
-                      <img src="" alt="première">
-                      <p>Première</p>
-                  </li>
-                  <li>
-                      <img src="" alt="after effects">
-                      <p>After Effects</p>
-                  </li>
-              </ul>
-          </div>
-        </div>
-      </div></div>
-      <div class="card">
-        <div class="environnement">
-          <h3>Environnement</h3>
-          <img src="" alt="environnement" />
-         <div class="details">
-             <img src="" alt="système">
-             <p><strong>Système d'éxploitation : </strong>Windows 10, Linux Ubuntu 20.04</p>
-             <img src="" alt="work">
-             <p><strong>Work Flow : </strong>Git, WAMP, WinSCP, Chrome, Mozilla Firefox, Microsoft Edge </p>
-             <img src="" alt="IDE">
-             <p><strong>IDE : </strong>Visual Studio Code</p>
-             <img src="" alt="autres">
-             <p><strong>Autres compéences : </strong>Rédacteur web, SEO, Community Management</p>
-             <img src="" alt="savoirs">
-             <p><strong>Savoir-être : </strong>Capacité d'apprentissage, Collaboration, Prise de décision, Organisation, 
-                Sens du service, Esprit d'équipe.</p>
-         </div>
-        </div>
-      </div></div>
-    </section>
-
-    <section id="parcours">
+      <section id="parcours">
         <div class="parcours">
-            <div class="date">
-                <p>Juin 2021</p>
+            <div class="center">
+          <div class="date">
+            <p>Juin 2021</p>
+          </div>
+          <div class="card">
+            <div class="titre">
+              <img src="" alt="Diplôme" />
+              <h3>Diplôme Développeur Web (niveau 5)</h3>
+              <p><strong>CESI, Reims (51)</strong></p>
             </div>
-            <div class="card">
-                <div class="titre">
-                    <img src="" alt="Diplôme">
-                <h3>Diplôme Développeur Web 
-                    (niveau 5) </h3>
-                    <p><strong>CESI, Reims (51)</strong></p></div>
-                    <div class="detail">
-                      <ul>
-                          <li>Créer et intégrer des médias pour le web.</li>
-                          <li>Optimiser sa communication numérique.</li>
-                          <li>Développer un site web.</li>
-                          <li>Communiquer et promouvoir une application ou un site web.</li>
-                      </ul>  
-                    </div>
+            <div class="detail">
+              <ul>
+                <li>Créer et intégrer des médias pour le web.</li>
+                <li>Optimiser sa communication numérique.</li>
+                <li>Développer un site web.</li>
+                <li>
+                  Communiquer et promouvoir une application ou un site web.
+                </li>
+              </ul>
             </div>
-            <div class="date">
-                <p>Juin 2020</p>
-                <p>à</p>
-                <p>Juin 2021</p>
+          </div>
+          <div class="date">
+            <p>Juin 2020</p>
+            <p>à</p>
+            <p>Juin 2021</p>
+          </div>
+          <div class="card">
+            <div class="titre">
+              <img src="" alt="frontend" />
+              <h3>Intégrateur web</h3>
+              <p><strong>Agence Retrokube, Reims (51).</strong></p>
             </div>
-            <div class="card">
-                <div class="titre">
-                    <img src="" alt="frontend">
-                <h3>Intégrateur web </h3>
-                    <p><strong>Agence Retrokube, Reims (51).</strong></p></div>
-                    <div class="detail">
-                      <ul>
-                          <li>Création de sites vitrine avec Drupal et WordPress, création et édition de widgets et de thèmes.</li>
-                          <li>Intégration de maquettes HTML / SASS.</li>
-                          <li>Veille à la compatibilité avec les différents navigateurs (Chrome, Safari, Explorer, Firefox...) ainsi 
-                            qu’au responsive (tablette, mobile).
-                            </li>
-                          <li>Mise en production (client SSH, connexion FTP).</li>
-                          <li>Gestion du SEO.</li>
-                      </ul>  
-                    </div>
+            <div class="detail">
+              <ul>
+                <li>
+                  Création de sites vitrine avec Drupal et WordPress, création
+                  et édition de widgets et de thèmes.
+                </li>
+                <li>Intégration de maquettes HTML / SASS.</li>
+                <li>
+                  Veille à la compatibilité avec les différents navigateurs
+                  (Chrome, Safari, Explorer, Firefox...) ainsi qu’au responsive
+                  (tablette, mobile).
+                </li>
+                <li>Mise en production (client SSH, connexion FTP).</li>
+                <li>Gestion du SEO.</li>
+              </ul>
             </div>
-            <div class="date">
-                <p>Mars 2020</p>
-                <p>à</p>
-                <p>Juin 2020</p>
+          </div>
+          <div class="date">
+            <p>Mars 2020</p>
+            <p>à</p>
+            <p>Juin 2020</p>
+          </div>
+          <div class="card">
+            <div class="titre">
+              <img src="" alt="formation" />
+              <h3>Formation professionnelle</h3>
+              <p>
+                <strong
+                  >"Découverte des métiers de l'informatique Développement web /
+                  Gestion et maintenance des systèmes". CESI, Reims (51).
+                </strong>
+              </p>
             </div>
-            <div class="card">
-                <div class="titre">
-                    <img src="" alt="formation">
-                <h3>Formation professionnelle 
-                </h3>
-                    <p><strong>"Découverte des métiers de l'informatique Développement web / Gestion et maintenance 
-                        des systèmes".
-                        CESI, Reims (51).
-                        </strong></p></div>
-                    <div class="detail">
-                      <ul>
-                          <li>Maîtriser les concepts liés aux bases de données et notamment les bases de données relationnelles.</li>
-                          <li>Comprendre une infrastructure réseaux.</li>
-                          <li>Gestion de projet informatique.</li>
-                          <li>Initiation à l'algorithmique.</li>
-                          <li>Initiation au développement (procédural et objet).</li>
-                      </ul>  
-                    </div>
+            <div class="detail">
+              <ul>
+                <li>
+                  Maîtriser les concepts liés aux bases de données et notamment
+                  les bases de données relationnelles.
+                </li>
+                <li>Comprendre une infrastructure réseaux.</li>
+                <li>Gestion de projet informatique.</li>
+                <li>Initiation à l'algorithmique.</li>
+                <li>Initiation au développement (procédural et objet).</li>
+              </ul>
             </div>
-            <div class="date">
-                <p>Décembre 2011</p>
-                <p>à</p>
-                <p>Décembre 2019</p>
+          </div>
+          <div class="date">
+            <p>Décembre 2011</p>
+            <p>à</p>
+            <p>Décembre 2019</p>
+          </div>
+          <div class="card">
+            <div class="titre">
+              <img src="" alt="musique" />
+              <h3>Animateur socioculturel</h3>
+              <p>
+                <strong
+                  >Pôle Sud Musique - Association des Maisons de Quartier de
+                  Reims (51).</strong
+                >
+              </p>
             </div>
-            <div class="card">
-                <div class="titre">
-                    <img src="" alt="musique">
-                <h3>Animateur socioculturel</h3>
-                    <p><strong>Pôle Sud Musique - Association des Maisons de Quartier de Reims (51).</strong></p></div>
-                    <div class="detail">
-                      <ul>
-                          <li>Coordination de studios de répétitions.</li>
-                          <li>Coordination du dispositif d'accompagnement de groupes amateurs "Looper Tour".</li>
-                          <li>Mise en place de résidences artistiques.</li>
-                          <li>Coréalisation de concerts avec des associations de production.</li>
-                          <li>Coréalisation de concerts avec des associations de production.</li>
-                          <li>Mise en place d'ateliers de sensibilisation et de médiation culturelle auprès du jeune public.</li>
-                      </ul>  
-                    </div>
+            <div class="detail">
+              <ul>
+                <li>Coordination de studios de répétitions.</li>
+                <li>
+                  Coordination du dispositif d'accompagnement de groupes
+                  amateurs "Looper Tour".
+                </li>
+                <li>Mise en place de résidences artistiques.</li>
+                <li>
+                  Coréalisation de concerts avec des associations de production.
+                </li>
+                <li>
+                  Coréalisation de concerts avec des associations de production.
+                </li>
+                <li>
+                  Mise en place d'ateliers de sensibilisation et de médiation
+                  culturelle auprès du jeune public.
+                </li>
+              </ul>
             </div>
-            <div class="date">
-                <p>2009</p>
+          </div>
+          <div class="date">
+            <p>2009</p>
+          </div>
+          <div class="card">
+            <div class="titre">
+              <img src="" alt="Diplôme" />
+              <h3>
+                Licence Professionnelle Management et Administration des
+                Entreprises Culturelles
+              </h3>
+              <p><strong>IUT d'Angers (49).</strong></p>
             </div>
-            <div class="card">
-                <div class="titre">
-                    <img src="" alt="Diplôme">
-                <h3>Licence Professionnelle 
-                    Management et Administration 
-                    des Entreprises Culturelles</h3>
-                    <p><strong>IUT d'Angers (49).</strong></p></div>
-                   
+          </div>
+          <div class="date">
+            <p>2008</p>
+          </div>
+          <div class="card">
+            <div class="titre">
+              <img src="" alt="Diplôme" />
+              <h3>DUT Gestion des Entreprises et des Administrations</h3>
+              <p><strong>IUT de Reims (49).</strong></p>
             </div>
-            <div class="date">
-                <p>2008</p>
-            </div>
-            <div class="card">
-                <div class="titre">
-                    <img src="" alt="Diplôme">
-                <h3>DUT Gestion des Entreprises 
-                    et des Administrations</h3>
-                    <p><strong>IUT de Reims (49).</strong></p></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="realisations">
-        <div class="realisations">
-        <div class="card">
-            <a href=""><img src="" alt="fredon"></a>
-        </div>
-        <div class="card">
-            <a href=""><img src="" alt="fredon"></a>
-        </div>
-        <div class="card">
-            <a href=""><img src="" alt="fredon"></a>
-        </div>
-        <div class="card">
-            <a href=""><img src="" alt="fredon"></a>
+          </div>
         </div></div>
-    </section>
+      </section>
 
-    <section id="contact">
+      <div id="realisations">
+        <div class="realisations">
+            <div class="center">
+          <div class="card">
+            <a href=""><img src="" alt="fredon" /></a>
+          </div>
+          <div class="card">
+            <a href=""><img src="" alt="fredon" /></a>
+          </div>
+          <div class="card">
+            <a href=""><img src="" alt="fredon" /></a>
+          </div>
+          <div class="card">
+            <a href=""><img src="" alt="fredon" /></a>
+          </div>
+        </div></div>
+      </section>
+
+      <section id="contact">
         <div class="contact">
-        <h2>CONTACT</h2>
-        <p>Actuellement à la recherche d'un nouvel emploi, je suis intéressé par les postes de : <br>
-            <strong>Développeur front-end • Intégrateur web</strong></p>
-        <div class="card">
+            <div class="center">
+          <h2>CONTACT</h2>
+          <p>
+            Actuellement à la recherche d'un nouvel emploi, je suis intéressé
+            par les postes de : <br />
+            <strong>Développeur front-end • Intégrateur web</strong>
+          </p>
+          <div class="card">
             <div class="tel">
-                <img src="" alt="téléphone">
-                <p>+33 6 78 34 58 69</p>
+              <img src="" alt="téléphone" />
+              <p>+33 6 78 34 58 69</p>
             </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card">
             <div class="mail">
-                <img src="" alt="mail">
-                <p>jcurbain.admin@gmail.com</p>
+              <img src="" alt="mail" />
+              <p>jcurbain.admin@gmail.com</p>
             </div>
-        </div>
-        </div>
-    </section>
+          </div>
+        </div></div>
+      </section>
 
-    <footer>
+      <footer>
+        <div class="center">
         <div class="rs">
-            <img src="" alt="linkedin">
-            <img src="" alt="print">
+          <img src="" alt="linkedin" />
+          <img src="" alt="print" />
         </div>
         <div class="footer">
-            <p>Jean-Christophe Urbain © 2021 <br>
-                droits réservés</p>
-        </div>
-    </footer>
+          <p>
+            Jean-Christophe Urbain © 2021 <br />
+            droits réservés
+          </p>
+        </div></div>
+      </footer>
+    </div>
   </body>
 </html>

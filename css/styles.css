@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: #656f73;
+}
+
+h2 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 51px;
+  color: #656f73;
+}
+
+h3 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 51px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  color: #656f73;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.cv {
+  position: relative;
+  height: 100%;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.3s;
+  /* IE 9 */
+  -webkit-transform: translatex(0);
+  /* Safari */
+  transform: translatex(0);
+}
+
+.with--sidebar .site_cache {
+  position: absolute;
+  z-index: 50;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
+}
+
+.with--sidebar .cv {
+  -webkit-transform: translatex(-320px);
+  transform: translatex(-320px);
+}
+
+#close {
+  width: 35px;
+}
+
+.toggle {
+  display: block;
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  z-index: 9999;
+}
+
+.with--sidebar #navmobile {
+  display: block;
+}
+
+#mobile {
+  position: absolute;
+  right: -320px;
+  top: 0;
+  bottom: 0;
+  z-index: 99999;
+  background-color: #656f73;
+  width: 100%;
+}
+
+#mobile .clearfix {
+  width: 270px;
+}
+
+#mobile ul {
+  margin-left: 1em;
+  padding: 0;
+  list-style: none outside;
+  text-align: left;
+}
+
+#mobile ul li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#mobile ul li a {
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+}
+
+#desktop {
+  display: none;
+}
+
+@media (min-width: 360px) {
+  .with--sidebar .cv {
+    -webkit-transform: translatex(-360px);
+    transform: translatex(-360px);
+  }
+  #mobile {
+    right: -360px;
+  }
+}
+
+@media (min-width: 375px) {
+  .with--sidebar .cv {
+    -webkit-transform: translatex(-375px);
+    transform: translatex(-375px);
+  }
+  #mobile {
+    right: -375px;
+  }
+}
+
+@media (min-width: 411px) {
+  .with--sidebar .cv {
+    -webkit-transform: translatex(-411px);
+    transform: translatex(-411px);
+  }
+  #mobile {
+    right: -411px;
+  }
+}
+
+@media (min-width: 414px) {
+  .with--sidebar .cv {
+    -webkit-transform: translatex(-414px);
+    transform: translatex(-414px);
+  }
+  #mobile {
+    right: -414px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #toggle {
+    display: none;
+  }
+  #desktop {
+    display: block;
+  }
+  #desktop ul li {
+    list-style: none;
+  }
+  #mobile {
+    display: none;
+  }
+}
+
+header {
+  background: no-repeat url(../assets/fond.png);
+  height: 575px;
+  width: auto;
+}
+/*# sourceMappingURL=styles.css.map */
