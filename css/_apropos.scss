@@ -1,0 +1,46 @@
+#a_propos {
+  background-color: rgba($color: $bleuGris, $alpha: 0.5);
+  padding-bottom: 80px;
+  h2 {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .a_propos {
+    .profil {
+      .photo {
+        width: 245px;
+        margin: 0 auto;
+        img {
+          width: 245px;
+        }
+      }
+    }
+    .légende {
+      margin: 50px 0 40px 0;
+      text-align: center;
+
+      .bouton {
+        margin: 40px 0;
+        a {
+          display: inline-block;
+          width: 220px;
+          font-weight: bold;
+          font-family: "Roboto", sans-serif;
+          font-size: 16px;
+          color: $gris;
+          background-color: rgba($color: $bleuClair, $alpha: 0.5);
+          margin: 10px auto;
+          height: 50px;
+          line-height: 50px;
+          border-radius: 50px;
+        }
+      }
+    }
+    .description {
+      :nth-child(1) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
