@@ -21,6 +21,10 @@
       text-align: center;
 
       .bouton {
+        :hover {
+          background-color: rgba($color: #ff722a, $alpha: 0.5);
+          transition: 500ms;
+        }
         margin: 40px 0;
         a {
           display: inline-block;
@@ -40,6 +44,72 @@
     .description {
       :nth-child(1) {
         margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #a_propos {
+    h2 {
+    }
+
+    .a_propos {
+      display: flex;
+      .profil {
+        width: 50%;
+        .photo {
+          img {
+          }
+        }
+      }
+      .légende {
+        .bouton {
+          :hover {
+          }
+
+          a {
+          }
+        }
+      }
+      .description {
+        width: 50%;
+        :nth-child(1) {
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #a_propos {
+    h2 {
+      text-align: unset;
+    }
+
+    .a_propos {
+      .profil {
+        .photo {
+          margin: 0;
+          img {
+          }
+        }
+      }
+      .légende {
+        .bouton {
+          display: flex;
+          :hover {
+          }
+
+          a {
+            width: 190px;
+          }
+        }
+      }
+      .description {
+        width: 50%;
+        :nth-child(1) {
+        }
       }
     }
   }

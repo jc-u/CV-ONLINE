@@ -46,7 +46,7 @@ a {
   margin: 0 auto;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   h1 {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -68,6 +68,9 @@ a {
     font-family: "Roboto", sans-serif;
     font-size: 21px;
     color: #656f73;
+  }
+  .center {
+    width: 85%;
   }
 }
 
@@ -204,15 +207,82 @@ a {
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media (min-width: 600px) {
+  .with--sidebar .cv {
+    -webkit-transform: translatex(-600px);
+    transform: translatex(-600px);
+  }
+  #mobile {
+    right: -600px;
+  }
+}
+
+@media (min-width: 768px) {
+  .with--sidebar .cv {
+    -webkit-transform: translatex(-768px);
+    transform: translatex(-768px);
+  }
+  #mobile {
+    right: -768px;
+  }
+}
+
+@media (min-width: 834px) {
+  .with--sidebar .cv {
+    -webkit-transform: translatex(-834px);
+    transform: translatex(-834px);
+  }
+  #mobile {
+    right: -834px;
+  }
+}
+
+@media (min-width: 960px) {
+  .with--sidebar .cv {
+    -webkit-transform: translatex(-960px);
+    transform: translatex(-960px);
+  }
+  #mobile {
+    right: -960px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   #toggle {
     display: none;
   }
   #desktop {
     display: block;
+    height: 100px;
+    position: relative;
+    background-color: rgba(215, 236, 244, 0.5);
+  }
+  #desktop ul {
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: absolute;
+    width: 70%;
+    right: 60px;
+  }
+  #desktop ul :nth-child(1) img {
+    width: 35px;
   }
   #desktop ul li {
     list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    color: #656f73;
+  }
+  #desktop ul li a {
+    color: #656f73;
   }
   #mobile {
     display: none;
@@ -223,11 +293,72 @@ header {
   background: no-repeat url(../assets/fond.png);
   height: 575px;
   width: auto;
+  position: relative;
 }
 
 header .titre {
-  padding-top: 240px;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
+}
+
+@media (min-width: 360px) {
+  header {
+    background: no-repeat url(../assets/fond.png);
+    height: 640px;
+    width: auto;
+  }
+}
+
+@media (min-width: 411px) {
+  header {
+    background: no-repeat url(../assets/fond.png);
+    height: 736px;
+    width: auto;
+  }
+}
+
+@media (min-width: 600px) {
+  header {
+    background: no-repeat url(../assets/fond.png);
+    height: 816px;
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    background: no-repeat url(../assets/fond.png);
+    height: 1024px;
+    width: auto;
+  }
+}
+
+@media (min-width: 834px) {
+  header {
+    background: no-repeat url(../assets/fond.png);
+    height: 932px;
+    width: auto;
+  }
+}
+
+@media (min-width: 960px) {
+  header {
+    background: no-repeat url(../assets/fond.png);
+    height: 600px;
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    background: no-repeat url(../assets/fond.png);
+    height: 1088px;
+    width: auto;
+  }
 }
 
 #a_propos {
@@ -258,6 +389,12 @@ header .titre {
   margin: 40px 0;
 }
 
+#a_propos .a_propos .légende .bouton :hover {
+  background-color: rgba(255, 114, 42, 0.5);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
 #a_propos .a_propos .légende .bouton a {
   display: inline-block;
   width: 220px;
@@ -276,6 +413,40 @@ header .titre {
   margin-bottom: 30px;
 }
 
+@media (min-width: 768px) {
+  #a_propos .a_propos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #a_propos .a_propos .profil {
+    width: 50%;
+  }
+  #a_propos .a_propos .description {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #a_propos h2 {
+    text-align: unset;
+  }
+  #a_propos .a_propos .profil .photo {
+    margin: 0;
+  }
+  #a_propos .a_propos .légende .bouton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #a_propos .a_propos .légende .bouton a {
+    width: 190px;
+  }
+  #a_propos .a_propos .description {
+    width: 50%;
+  }
+}
+
 #competences {
   padding-bottom: 80px;
 }
@@ -292,6 +463,8 @@ header .titre {
   border-radius: 30px;
   -webkit-box-shadow: 6px 6px 7px -1px #656f73;
           box-shadow: 6px 6px 7px -1px #656f73;
+  height: 320px;
+  position: relative;
 }
 
 #competences .card .frontend .titre {
@@ -304,6 +477,10 @@ header .titre {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #competences .card .frontend .titre h3 {
@@ -315,9 +492,20 @@ header .titre {
   opacity: 0.6;
 }
 
-#competences .card .frontend p {
+#competences .card .frontend .descriptif {
+  position: absolute;
+  top: 27%;
+  left: 0;
+  right: 0;
   width: 90%;
   margin: 0 auto;
+}
+
+#competences .card .frontend .logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #competences .card .frontend .logo ul {
@@ -367,6 +555,10 @@ header .titre {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #competences .card .backend .titre h3 {
@@ -378,9 +570,20 @@ header .titre {
   opacity: 0.6;
 }
 
-#competences .card .backend p {
+#competences .card .backend .descriptif {
+  position: absolute;
+  top: 27%;
+  left: 0;
+  right: 0;
   width: 90%;
   margin: 0 auto;
+}
+
+#competences .card .backend .logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #competences .card .backend .logo ul {
@@ -430,6 +633,10 @@ header .titre {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #competences .card .CMS .titre h3 {
@@ -440,9 +647,20 @@ header .titre {
   width: 50px;
 }
 
-#competences .card .CMS p {
+#competences .card .CMS .descriptif {
+  position: absolute;
+  top: 27%;
+  left: 0;
+  right: 0;
   width: 90%;
   margin: 0 auto;
+}
+
+#competences .card .CMS .logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #competences .card .CMS .logo ul {
@@ -488,6 +706,10 @@ header .titre {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #competences .card .webdesign .titre h3 {
@@ -499,9 +721,20 @@ header .titre {
   opacity: 0.6;
 }
 
-#competences .card .webdesign p {
+#competences .card .webdesign .descriptif {
+  position: absolute;
+  top: 27%;
+  left: 0;
+  right: 0;
   width: 90%;
   margin: 0 auto;
+}
+
+#competences .card .webdesign .logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #competences .card .webdesign .logo ul {
@@ -563,6 +796,10 @@ header .titre {
   margin: 0 auto;
 }
 
+#competences .card .environnement .details {
+  margin-left: 10px;
+}
+
 #competences .card .environnement .details .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,6 +809,36 @@ header .titre {
 #competences .card .environnement .details img {
   width: 20px;
   opacity: 0.6;
+}
+
+@media (min-width: 411px) {
+  #competences .card .frontend .descriptif {
+    top: 30%;
+  }
+  #competences .card .backend .descriptif {
+    top: 30%;
+  }
+  #competences .card .CMS .descriptif {
+    top: 30%;
+  }
+  #competences .card .webdesign .descriptif {
+    top: 30%;
+  }
+  #competences .card .environnement .details .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  #competences .card .frontend .descriptif {
+    top: 30%;
+  }
+  #competences .card .environnement .details {
+    margin-top: 20px;
+  }
 }
 
 #parcours {
@@ -588,7 +855,188 @@ header .titre {
   text-align: center;
 }
 
-#parcours .card_diplome {
+#parcours .card_diplomeweb {
+  height: 250px;
+  margin: 40px auto;
+  border: solid 1px #656f73;
+  border-radius: 30px;
+  -webkit-box-shadow: 6px 6px 7px -1px #656f73;
+          box-shadow: 6px 6px 7px -1px #656f73;
+  background-color: white;
+}
+
+#parcours .card_diplomeweb .titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+}
+
+#parcours .card_diplomeweb .titre h3 {
+  color: rgba(250, 213, 47, 0.6);
+}
+
+#parcours .card_diplomeweb .titre img {
+  width: 30px;
+  opacity: 0.6;
+  margin: 0 10px;
+}
+
+#parcours .card_diplomeweb p {
+  width: 90%;
+  margin: 0 0 10px 50px;
+}
+
+#parcours .card_diplomeweb .detail ul {
+  margin-left: 30px;
+}
+
+#parcours .card_diplomeweb .detail ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #656f73;
+}
+
+#parcours .card_stage {
+  height: 350px;
+  margin: 40px auto;
+  border: solid 1px #656f73;
+  border-radius: 30px;
+  -webkit-box-shadow: 6px 6px 7px -1px #656f73;
+          box-shadow: 6px 6px 7px -1px #656f73;
+  background-color: white;
+}
+
+#parcours .card_stage .titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+}
+
+#parcours .card_stage .titre h3 {
+  color: rgba(255, 66, 85, 0.6);
+}
+
+#parcours .card_stage .titre img {
+  width: 30px;
+  opacity: 0.6;
+  margin: 0 10px;
+}
+
+#parcours .card_stage p {
+  width: 90%;
+  margin: 0 0 10px 50px;
+}
+
+#parcours .card_stage .detail ul {
+  margin-left: 30px;
+}
+
+#parcours .card_stage .detail ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #656f73;
+}
+
+#parcours .card_formation {
+  height: 350px;
+  margin: 40px auto;
+  border: solid 1px #656f73;
+  border-radius: 30px;
+  -webkit-box-shadow: 6px 6px 7px -1px #656f73;
+          box-shadow: 6px 6px 7px -1px #656f73;
+  background-color: white;
+}
+
+#parcours .card_formation .titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+}
+
+#parcours .card_formation .titre h3 {
+  color: rgba(101, 209, 24, 0.6);
+}
+
+#parcours .card_formation .titre img {
+  width: 30px;
+  opacity: 0.6;
+  margin: 0 10px;
+}
+
+#parcours .card_formation p {
+  width: 90%;
+  margin: 0 0 10px 50px;
+}
+
+#parcours .card_formation .detail ul {
+  margin-left: 30px;
+}
+
+#parcours .card_formation .detail ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #656f73;
+}
+
+#parcours .card_metier {
+  height: 430px;
+  margin: 40px auto;
+  border: solid 1px #656f73;
+  border-radius: 30px;
+  -webkit-box-shadow: 6px 6px 7px -1px #656f73;
+          box-shadow: 6px 6px 7px -1px #656f73;
+  background-color: white;
+}
+
+#parcours .card_metier .titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+}
+
+#parcours .card_metier .titre h3 {
+  color: rgba(220, 42, 255, 0.6);
+}
+
+#parcours .card_metier .titre img {
+  width: 30px;
+  opacity: 0.6;
+  margin: 0 10px;
+}
+
+#parcours .card_metier p {
+  width: 85%;
+  margin: 0 0 10px 50px;
+}
+
+#parcours .card_metier .detail ul {
+  margin-left: 30px;
+}
+
+#parcours .card_metier .detail ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #656f73;
+}
+
+#parcours .card_diplome_metier {
+  position: relative;
   height: 220px;
   margin: 40px auto;
   border: solid 1px #656f73;
@@ -598,7 +1046,7 @@ header .titre {
   background-color: white;
 }
 
-#parcours .card_diplome .titre {
+#parcours .card_diplome_metier .titre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,22 +1058,417 @@ header .titre {
   height: 75px;
 }
 
-#parcours .card_diplome .titre h3 {
+#parcours .card_diplome_metier .titre h3 {
   color: rgba(250, 213, 47, 0.6);
+  position: absolute;
+  top: 10px;
+  left: 50px;
 }
 
-#parcours .card_diplome .titre img {
+#parcours .card_diplome_metier .titre img {
   width: 30px;
   opacity: 0.6;
   margin: 0 10px;
+  position: absolute;
+  top: 20px;
+  left: 0;
 }
 
-#parcours .card_diplome p {
+#parcours .card_diplome_metier p {
+  position: absolute;
+  bottom: 0;
   width: 90%;
   margin: 0 0 10px 50px;
 }
 
-#parcours .card_diplome .detail ul {
+#parcours .card_diplome_metier .detail ul {
   margin-left: 30px;
+}
+
+#parcours .card_diplome_metier .detail ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #656f73;
+}
+
+#parcours .card_diplome_gea {
+  position: relative;
+  height: 140px;
+  margin: 40px auto;
+  border: solid 1px #656f73;
+  border-radius: 30px;
+  -webkit-box-shadow: 6px 6px 7px -1px #656f73;
+          box-shadow: 6px 6px 7px -1px #656f73;
+  background-color: white;
+}
+
+#parcours .card_diplome_gea .titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 75px;
+}
+
+#parcours .card_diplome_gea .titre h3 {
+  color: rgba(250, 213, 47, 0.6);
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+
+#parcours .card_diplome_gea .titre img {
+  width: 30px;
+  opacity: 0.6;
+  margin: 0 10px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+#parcours .card_diplome_gea p {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  margin: 0 0 10px 50px;
+}
+
+#parcours .card_diplome_gea .detail ul {
+  margin-left: 30px;
+}
+
+#parcours .card_diplome_gea .detail ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #656f73;
+}
+
+@media (min-width: 360px) {
+  #parcours .card_diplomeweb {
+    height: 220px;
+  }
+  #parcours .card_metier {
+    height: 370px;
+  }
+  #parcours .card_diplome_metier {
+    height: 170px;
+  }
+}
+
+@media (min-width: 411px) {
+  #parcours .card_diplomeweb {
+    height: 220px;
+  }
+  #parcours .card_stage {
+    height: 280px;
+  }
+  #parcours .card_formation {
+    height: 300px;
+  }
+  #parcours .card_metier {
+    height: 340px;
+  }
+  #parcours .card_diplome_metier {
+    height: 170px;
+  }
+}
+
+@media (min-width: 600px) {
+  #parcours .card_diplomeweb .detail {
+    width: 93%;
+    margin: 0 auto;
+  }
+  #parcours .card_stage .detail {
+    width: 93%;
+    margin: 0 auto;
+  }
+  #parcours .card_formation .detail {
+    width: 93%;
+    margin: 0 auto;
+  }
+  #parcours .card_metier .detail {
+    width: 93%;
+    margin: 0 auto;
+  }
+  #parcours .card_diplome_metier {
+    height: 140px;
+  }
+  #parcours .card_diplome_metier .detail {
+    width: 93%;
+    margin: 0 auto;
+  }
+  #parcours .card_diplome_gea {
+    height: 110px;
+  }
+  #parcours .card_diplome_gea .detail {
+    width: 93%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  #parcours .card_diplomeweb .detail {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #parcours .card_stage .detail {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #parcours .card_formation .detail {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #parcours .card_metier {
+    height: 270px;
+  }
+  #parcours .card_metier .detail {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #parcours .card_diplome_metier {
+    height: 110px;
+  }
+  #parcours .card_diplome_metier .detail {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #parcours .card_diplome_gea {
+    height: 80px;
+  }
+  #parcours .card_diplome_gea .detail {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 960px) {
+  #parcours .card_diplomeweb .detail {
+    width: 96%;
+    margin: 0 auto;
+  }
+  #parcours .card_stage .detail {
+    width: 96%;
+    margin: 0 auto;
+  }
+  #parcours .card_formation .detail {
+    width: 96%;
+    margin: 0 auto;
+  }
+  #parcours .card_metier {
+    height: 270px;
+  }
+  #parcours .card_metier .detail {
+    width: 96%;
+    margin: 0 auto;
+  }
+  #parcours .card_diplome_metier {
+    height: 110px;
+  }
+  #parcours .card_diplome_metier .detail {
+    width: 96%;
+    margin: 0 auto;
+  }
+  #parcours .card_diplome_gea {
+    height: 80px;
+  }
+  #parcours .card_diplome_gea .detail {
+    width: 96%;
+    margin: 0 auto;
+  }
+}
+
+#realisations {
+  padding-bottom: 80px;
+}
+
+#realisations h2 {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#realisations .card {
+  position: relative;
+  background-color: rgba(215, 236, 244, 0.5);
+  margin-bottom: 40px;
+  border: solid 1px #656f73;
+  border-radius: 30px;
+  -webkit-box-shadow: 6px 6px 7px -1px #656f73;
+          box-shadow: 6px 6px 7px -1px #656f73;
+  display: block;
+  overflow: hidden;
+  height: 148px;
+}
+
+#realisations .card :hover .vitrine {
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+#realisations .card :hover .etiquettes {
+  display: block;
+  opacity: 1;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+#realisations .card .vitrine {
+  position: relative;
+}
+
+#realisations .card .vitrine img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 30px;
+  width: 100%;
+}
+
+#realisations .card .etiquettes {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  opacity: 0;
+}
+
+@media (min-width: 360px) {
+  #realisations .card {
+    height: 167px;
+  }
+}
+
+@media (min-width: 600px) {
+  #realisations .card {
+    height: 277px;
+  }
+}
+
+@media (min-width: 768px) {
+  #realisations .card {
+    height: 353px;
+  }
+}
+
+#contact {
+  padding-bottom: 80px;
+  background-color: rgba(215, 236, 244, 0.5);
+}
+
+#contact h2 {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#contact p {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+#contact p strong {
+  font-family: "Roboto Mono", monospace;
+}
+
+#contact .card {
+  margin-bottom: 40px;
+  border: solid 1px #656f73;
+  border-radius: 30px;
+  -webkit-box-shadow: 6px 6px 7px -1px #656f73;
+          box-shadow: 6px 6px 7px -1px #656f73;
+  background-color: white;
+  height: 110px;
+}
+
+#contact .card .tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 110px;
+}
+
+#contact .card .tel img {
+  width: 50px;
+}
+
+#contact .card .tel p {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+#contact .card .mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 110px;
+}
+
+#contact .card .mail img {
+  width: 50px;
+}
+
+#contact .card .mail p {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media (min-width: 600px) {
+  #contact .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #contact .flex .card {
+    width: 40%;
+  }
+}
+
+footer {
+  background-color: #656f73;
+}
+
+footer .rs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .rs img {
+  width: 20px;
+  margin: 20px 5px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  font-size: 12px;
 }
 /*# sourceMappingURL=styles.css.map */

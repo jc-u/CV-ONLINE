@@ -1,0 +1,19 @@
+footer {
+  background-color: $gris;
+
+  .rs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 20px;
+      margin: 20px 5px;
+    }
+  }
+
+  p {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+  }
+}

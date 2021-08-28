@@ -1,0 +1,189 @@
+#realisations {
+  padding-bottom: 80px;
+  h2 {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .card {
+    position: relative;
+    background-color: rgba($color: $bleuGris, $alpha: 0.5);
+    margin-bottom: 40px;
+    border: solid 1px $gris;
+    border-radius: 30px;
+    box-shadow: 6px 6px 7px -1px rgba($color: $gris, $alpha: 1);
+    display: block;
+    overflow: hidden;
+    height: 148px;
+    :hover {
+      .vitrine {
+        opacity: 0;
+        transition: opacity 500ms;
+      }
+      .etiquettes {
+        display: block;
+        opacity: 1;
+        transition: opacity 500ms;
+      }
+    }
+    .vitrine {
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-radius: 30px;
+        width: 100%;
+      }
+    }
+
+    .etiquettes {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: none;
+      opacity: 0;
+    }
+  }
+}
+
+@media (min-width: 360px) {
+  #realisations {
+    h2 {
+    }
+
+    .card {
+      height: 167px;
+      :hover {
+        .vitrine {
+        }
+        .etiquettes {
+        }
+      }
+      .vitrine {
+        img {
+        }
+      }
+
+      .etiquettes {
+      }
+    }
+  }
+}
+@media (min-width: 411px) {
+  #realisations {
+    h2 {
+    }
+
+    .card {
+      :hover {
+        .vitrine {
+        }
+        .etiquettes {
+        }
+      }
+      .vitrine {
+        img {
+        }
+      }
+
+      .etiquettes {
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  #realisations {
+    h2 {
+    }
+
+    .card {
+      height: 277px;
+      :hover {
+        .vitrine {
+        }
+        .etiquettes {
+        }
+      }
+      .vitrine {
+        img {
+        }
+      }
+
+      .etiquettes {
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  #realisations {
+    h2 {
+    }
+
+    .card {
+      height: 353px;
+      :hover {
+        .vitrine {
+        }
+        .etiquettes {
+        }
+      }
+      .vitrine {
+        img {
+        }
+      }
+
+      .etiquettes {
+      }
+    }
+  }
+}
+@media (min-width: 834px) {
+  #realisations {
+    h2 {
+    }
+
+    .card {
+      :hover {
+        .vitrine {
+        }
+        .etiquettes {
+        }
+      }
+      .vitrine {
+        img {
+        }
+      }
+
+      .etiquettes {
+      }
+    }
+  }
+}
+@media (min-width: 960px) {
+  #realisations {
+    h2 {
+    }
+
+    .card {
+      :hover {
+        .vitrine {
+        }
+        .etiquettes {
+        }
+      }
+      .vitrine {
+        img {
+        }
+      }
+
+      .etiquettes {
+      }
+    }
+  }
+}

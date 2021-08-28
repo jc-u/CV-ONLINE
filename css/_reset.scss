@@ -43,7 +43,7 @@ a {
   margin: 0 auto;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   h1 {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -68,5 +68,9 @@ a {
     font-family: "Roboto", sans-serif;
     font-size: 21px;
     color: $gris;
+  }
+
+  .center {
+    width: 85%;
   }
 }

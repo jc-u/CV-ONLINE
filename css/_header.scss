@@ -2,9 +2,87 @@ header {
   background: no-repeat url(../assets/fond.png);
   height: 575px;
   width: auto;
+  position: relative;
 
   .titre {
-    padding-top: 240px;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
     text-align: center;
+  }
+}
+
+@media (min-width: 360px) {
+  header {
+    background: no-repeat url(../assets/fond.png);
+    height: 640px;
+    width: auto;
+
+    .titre {
+    }
+  }
+}
+
+@media (min-width: 411px) {
+  header {
+    background: no-repeat url(../assets/fond.png);
+    height: 736px;
+    width: auto;
+
+    .titre {
+    }
+  }
+}
+@media (min-width: 600px) {
+  header {
+    background: no-repeat url(../assets/fond.png);
+    height: 816px;
+    width: auto;
+
+    .titre {
+    }
+  }
+}
+@media (min-width: 768px) {
+  header {
+    background: no-repeat url(../assets/fond.png);
+    height: 1024px;
+    width: auto;
+
+    .titre {
+    }
+  }
+}
+@media (min-width: 834px) {
+  header {
+    background: no-repeat url(../assets/fond.png);
+    height: 932px;
+    width: auto;
+
+    .titre {
+    }
+  }
+}
+@media (min-width: 960px) {
+  header {
+    background: no-repeat url(../assets/fond.png);
+    height: 600px;
+    width: auto;
+
+    .titre {
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    background: no-repeat url(../assets/fond.png);
+    height: 1088px;
+    width: auto;
+
+    .titre {
+    }
   }
 }
