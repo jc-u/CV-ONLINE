@@ -907,3 +907,328 @@
     }
   }
 }
+@media (min-width: 1024px) {
+  #parcours {
+    padding-bottom: 100px;
+    h2 {
+      padding: 100px auto;
+    }
+
+    .date {
+    }
+
+    .card_diplomeweb {
+      height: 310px;
+      .titre {
+        height: 155px;
+        h3 {
+        }
+        img {
+        }
+      }
+
+      p {
+      }
+
+      .detail {
+        width: 96%;
+        margin: 0 auto;
+        ul {
+          li {
+          }
+        }
+      }
+    }
+    .card_stage {
+      .titre {
+        height: 105px;
+        h3 {
+        }
+        img {
+        }
+      }
+
+      p {
+      }
+
+      .detail {
+        width: 96%;
+        margin: 0 auto;
+        ul {
+          li {
+          }
+        }
+      }
+    }
+    .card_formation {
+      .titre {
+        height: 105px;
+        h3 {
+        }
+        img {
+        }
+      }
+
+      p {
+      }
+
+      .detail {
+        width: 96%;
+        margin: 0 auto;
+        ul {
+          li {
+          }
+        }
+      }
+    }
+    .card_metier {
+      height: 270px;
+      .titre {
+        height: 105px;
+        h3 {
+        }
+        img {
+        }
+      }
+
+      p {
+      }
+
+      .detail {
+        width: 96%;
+        margin: 0 auto;
+        ul {
+          li {
+          }
+        }
+      }
+    }
+    .card_diplome_metier {
+      height: 330px;
+
+      .titre {
+        h3 {
+        }
+        img {
+        }
+      }
+
+      p {
+      }
+
+      .detail {
+        width: 96%;
+        margin: 0 auto;
+        ul {
+          li {
+          }
+        }
+      }
+    }
+    .card_diplome_gea {
+      height: 260px;
+      .titre {
+        h3 {
+        }
+        img {
+        }
+      }
+
+      p {
+      }
+
+      .detail {
+        width: 96%;
+        margin: 0 auto;
+        ul {
+          li {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  #parcours {
+    h2 {
+      text-align: unset;
+    }
+
+    .date {
+    }
+
+    .card_diplomeweb {
+      height: 431px;
+      .titre {
+        height: 145px;
+        h3 {
+          width: 940px;
+        }
+        img {
+          width: 67px;
+          margin: 0 40px;
+        }
+      }
+
+      p {
+        margin: 0 0 10px 149px;
+      }
+
+      .detail {
+        margin: 40px 120px;
+        width: 86%;
+
+        ul {
+          li {
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+    .card_stage {
+      height: 431px;
+      .titre {
+        height: 75px;
+        margin-top: 30px;
+        h3 {
+        }
+        img {
+          width: 67px;
+          margin: 0 40px;
+        }
+      }
+
+      p {
+        margin: 0 0 10px 149px;
+      }
+
+      .detail {
+        margin: 40px 120px;
+        width: 86%;
+
+        ul {
+          li {
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+    .card_formation {
+      height: 431px;
+      .titre {
+        height: 75px;
+        margin-top: 30px;
+
+        h3 {
+        }
+        img {
+          width: 67px;
+          margin: 0 40px;
+        }
+      }
+
+      p {
+        margin: 0 0 10px 149px;
+        width: 85%;
+      }
+
+      .detail {
+        margin: 40px 120px;
+        width: 86%;
+
+        ul {
+          li {
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+    .card_metier {
+      height: 431px;
+      .titre {
+        height: 75px;
+        margin-top: 30px;
+
+        h3 {
+        }
+        img {
+          width: 67px;
+          margin: 0 40px;
+        }
+      }
+
+      p {
+        margin: 0 0 10px 149px;
+      }
+
+      .detail {
+        margin: 40px 120px;
+        width: 86%;
+
+        ul {
+          li {
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+    .card_diplome_metier {
+      height: 260px;
+
+      .titre {
+        h3 {
+          width: 80%;
+          left: 145px;
+        }
+        img {
+          width: 67px;
+          margin: 0 40px;
+        }
+      }
+
+      p {
+        margin: 0 0 10px 149px;
+      }
+
+      .detail {
+        margin: 40px 120px;
+        width: 86%;
+
+        ul {
+          li {
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+    .card_diplome_gea {
+      height: 190px;
+      .titre {
+        h3 {
+          width: 80%;
+          left: 145px;
+        }
+        img {
+          width: 67px;
+          margin: 0 40px;
+        }
+      }
+
+      p {
+        margin: 0 0 10px 149px;
+      }
+
+      .detail {
+        margin: 40px 120px;
+        width: 86%;
+
+        ul {
+          li {
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+  }
+}

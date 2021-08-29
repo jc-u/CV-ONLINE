@@ -17,13 +17,12 @@
     height: 148px;
     :hover {
       .vitrine {
-        opacity: 0;
-        transition: opacity 500ms;
+        opacity: 0.4;
+        transition: opacity 1000ms;
       }
       .etiquettes {
-        display: block;
         opacity: 1;
-        transition: opacity 500ms;
+        transition: opacity 1000ms;
       }
     }
     .vitrine {
@@ -45,8 +44,26 @@
       bottom: 0;
       left: 0;
       right: 0;
-      display: none;
       opacity: 0;
+      width: 420px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-wrap: wrap;
+
+      p {
+        font-family: "Roboto Mono", monospace;
+        font-weight: bold;
+        background-color: rgba($color: $rouge, $alpha: 0.6);
+        border-radius: 15px;
+        padding: 10px;
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        font-size: 16px;
+        margin: 0 30px;
+      }
     }
   }
 }
@@ -183,6 +200,34 @@
       }
 
       .etiquettes {
+      }
+    }
+  }
+}
+@media (min-width: 1280px) {
+  #realisations {
+    h2 {
+    }
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .card {
+        width: 540px;
+        height: 262px;
+        :hover {
+          .vitrine {
+          }
+          .etiquettes {
+          }
+        }
+        .vitrine {
+          img {
+          }
+        }
+
+        .etiquettes {
+        }
       }
     }
   }

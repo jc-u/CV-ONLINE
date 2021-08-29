@@ -86,3 +86,11 @@ header {
     }
   }
 }
+@media (min-width: 1280px) {
+  header {
+    .titre {
+      top: 40%;
+      left: 470px;
+    }
+  }
+}

@@ -74,6 +74,12 @@ a {
   }
 }
 
+@media (min-width: 1280px) {
+  .center {
+    width: 1121px;
+  }
+}
+
 .cv {
   position: relative;
   height: 100%;
@@ -361,6 +367,13 @@ header .titre {
   }
 }
 
+@media (min-width: 1280px) {
+  header .titre {
+    top: 40%;
+    left: 470px;
+  }
+}
+
 #a_propos {
   background-color: rgba(215, 236, 244, 0.5);
   padding-bottom: 80px;
@@ -428,22 +441,34 @@ header .titre {
 }
 
 @media (min-width: 1024px) {
+  #a_propos {
+    padding-bottom: 100px;
+  }
   #a_propos h2 {
     text-align: unset;
+    padding: 100px 0;
   }
   #a_propos .a_propos .profil .photo {
     margin: 0;
   }
+  #a_propos .a_propos .légende {
+    text-align: unset;
+  }
   #a_propos .a_propos .légende .bouton {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
   #a_propos .a_propos .légende .bouton a {
     width: 190px;
+    text-align: center;
   }
   #a_propos .a_propos .description {
     width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  #a_propos .a_propos .légende .bouton a {
+    margin-right: 20px;
   }
 }
 
@@ -806,9 +831,13 @@ header .titre {
   display: flex;
 }
 
-#competences .card .environnement .details img {
+#competences .card .environnement .details .flex img {
   width: 20px;
   opacity: 0.6;
+}
+
+#competences .card .environnement .details .flex p strong {
+  font-family: "Roboto Mono", monospace;
 }
 
 @media (min-width: 411px) {
@@ -838,6 +867,190 @@ header .titre {
   }
   #competences .card .environnement .details {
     margin-top: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #competences {
+    padding-bottom: 100px;
+  }
+  #competences h2 {
+    padding: 100px 0;
+    text-align: unset;
+  }
+  #competences .card .frontend .titre {
+    position: relative;
+  }
+  #competences .card .frontend .titre h3 {
+    position: absolute;
+    left: 40px;
+  }
+  #competences .card .frontend .titre img {
+    position: absolute;
+    right: 90px;
+  }
+  #competences .card .frontend .descriptif {
+    top: 30%;
+  }
+  #competences .card .backend .titre {
+    position: relative;
+  }
+  #competences .card .backend .titre h3 {
+    position: absolute;
+    left: 40px;
+  }
+  #competences .card .backend .titre img {
+    position: absolute;
+    right: 90px;
+  }
+  #competences .card .CMS .titre {
+    position: relative;
+  }
+  #competences .card .CMS .titre h3 {
+    position: absolute;
+    left: 40px;
+  }
+  #competences .card .CMS .titre img {
+    position: absolute;
+    right: 90px;
+  }
+  #competences .card .webdesign .titre {
+    position: relative;
+  }
+  #competences .card .webdesign .titre h3 {
+    position: absolute;
+    left: 40px;
+  }
+  #competences .card .webdesign .titre img {
+    position: absolute;
+    right: 90px;
+  }
+  #competences .card .environnement .titre {
+    position: relative;
+  }
+  #competences .card .environnement .titre h3 {
+    position: absolute;
+    left: 40px;
+  }
+  #competences .card .environnement .titre img {
+    position: absolute;
+    right: 90px;
+  }
+  #competences .card .environnement .details {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #competences .card {
+    height: 431px;
+  }
+  #competences .card .frontend .titre {
+    top: 20px;
+  }
+  #competences .card .frontend .titre h3 {
+    left: 142px;
+  }
+  #competences .card .frontend .titre img {
+    width: 104px;
+  }
+  #competences .card .frontend .descriptif {
+    left: 142px;
+  }
+  #competences .card .frontend .logo {
+    bottom: 100px;
+  }
+  #competences .card .frontend .logo ul li img {
+    width: 122px;
+  }
+  #competences .card .frontend .logo ul li p {
+    bottom: -100px;
+    font-size: 21px;
+    width: 122px;
+  }
+  #competences .card .backend .titre {
+    top: 20px;
+  }
+  #competences .card .backend .titre h3 {
+    left: 142px;
+  }
+  #competences .card .backend .titre img {
+    width: 104px;
+  }
+  #competences .card .backend .descriptif {
+    left: 142px;
+  }
+  #competences .card .backend .logo {
+    bottom: 100px;
+  }
+  #competences .card .backend .logo ul li img {
+    width: 122px;
+  }
+  #competences .card .backend .logo ul li p {
+    bottom: -100px;
+    font-size: 21px;
+    width: 122px;
+  }
+  #competences .card .CMS .titre {
+    top: 20px;
+  }
+  #competences .card .CMS .titre h3 {
+    left: 142px;
+  }
+  #competences .card .CMS .titre img {
+    width: 104px;
+  }
+  #competences .card .CMS .descriptif {
+    left: 142px;
+  }
+  #competences .card .CMS .logo {
+    bottom: 100px;
+  }
+  #competences .card .CMS .logo ul li img {
+    width: 122px;
+  }
+  #competences .card .CMS .logo ul li p {
+    bottom: -100px;
+    font-size: 21px;
+    width: 122px;
+  }
+  #competences .card .webdesign .titre {
+    top: 20px;
+  }
+  #competences .card .webdesign .titre h3 {
+    left: 142px;
+  }
+  #competences .card .webdesign .titre img {
+    width: 104px;
+  }
+  #competences .card .webdesign .descriptif {
+    left: 142px;
+  }
+  #competences .card .webdesign .logo {
+    bottom: 100px;
+  }
+  #competences .card .webdesign .logo ul li img {
+    width: 122px;
+  }
+  #competences .card .webdesign .logo ul li p {
+    bottom: -100px;
+    font-size: 21px;
+    width: 122px;
+  }
+  #competences .card .environnement .titre {
+    top: 20px;
+  }
+  #competences .card .environnement .titre h3 {
+    left: 142px;
+  }
+  #competences .card .environnement .titre img {
+    width: 104px;
+  }
+  #competences .card .environnement p {
+    margin: 10px auto;
+  }
+  #competences .card .environnement .details {
+    margin-left: 142px;
   }
 }
 
@@ -1282,6 +1495,198 @@ header .titre {
   }
 }
 
+@media (min-width: 1024px) {
+  #parcours {
+    padding-bottom: 100px;
+  }
+  #parcours h2 {
+    padding: 100px auto;
+  }
+  #parcours .card_diplomeweb {
+    height: 310px;
+  }
+  #parcours .card_diplomeweb .titre {
+    height: 155px;
+  }
+  #parcours .card_diplomeweb .detail {
+    width: 96%;
+    margin: 0 auto;
+  }
+  #parcours .card_stage .titre {
+    height: 105px;
+  }
+  #parcours .card_stage .detail {
+    width: 96%;
+    margin: 0 auto;
+  }
+  #parcours .card_formation .titre {
+    height: 105px;
+  }
+  #parcours .card_formation .detail {
+    width: 96%;
+    margin: 0 auto;
+  }
+  #parcours .card_metier {
+    height: 270px;
+  }
+  #parcours .card_metier .titre {
+    height: 105px;
+  }
+  #parcours .card_metier .detail {
+    width: 96%;
+    margin: 0 auto;
+  }
+  #parcours .card_diplome_metier {
+    height: 330px;
+  }
+  #parcours .card_diplome_metier .detail {
+    width: 96%;
+    margin: 0 auto;
+  }
+  #parcours .card_diplome_gea {
+    height: 260px;
+  }
+  #parcours .card_diplome_gea .detail {
+    width: 96%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  #parcours h2 {
+    text-align: unset;
+  }
+  #parcours .card_diplomeweb {
+    height: 431px;
+  }
+  #parcours .card_diplomeweb .titre {
+    height: 145px;
+  }
+  #parcours .card_diplomeweb .titre h3 {
+    width: 940px;
+  }
+  #parcours .card_diplomeweb .titre img {
+    width: 67px;
+    margin: 0 40px;
+  }
+  #parcours .card_diplomeweb p {
+    margin: 0 0 10px 149px;
+  }
+  #parcours .card_diplomeweb .detail {
+    margin: 40px 120px;
+    width: 86%;
+  }
+  #parcours .card_diplomeweb .detail ul li {
+    margin: 10px auto;
+  }
+  #parcours .card_stage {
+    height: 431px;
+  }
+  #parcours .card_stage .titre {
+    height: 75px;
+    margin-top: 30px;
+  }
+  #parcours .card_stage .titre img {
+    width: 67px;
+    margin: 0 40px;
+  }
+  #parcours .card_stage p {
+    margin: 0 0 10px 149px;
+  }
+  #parcours .card_stage .detail {
+    margin: 40px 120px;
+    width: 86%;
+  }
+  #parcours .card_stage .detail ul li {
+    margin: 10px auto;
+  }
+  #parcours .card_formation {
+    height: 431px;
+  }
+  #parcours .card_formation .titre {
+    height: 75px;
+    margin-top: 30px;
+  }
+  #parcours .card_formation .titre img {
+    width: 67px;
+    margin: 0 40px;
+  }
+  #parcours .card_formation p {
+    margin: 0 0 10px 149px;
+    width: 85%;
+  }
+  #parcours .card_formation .detail {
+    margin: 40px 120px;
+    width: 86%;
+  }
+  #parcours .card_formation .detail ul li {
+    margin: 10px auto;
+  }
+  #parcours .card_metier {
+    height: 431px;
+  }
+  #parcours .card_metier .titre {
+    height: 75px;
+    margin-top: 30px;
+  }
+  #parcours .card_metier .titre img {
+    width: 67px;
+    margin: 0 40px;
+  }
+  #parcours .card_metier p {
+    margin: 0 0 10px 149px;
+  }
+  #parcours .card_metier .detail {
+    margin: 40px 120px;
+    width: 86%;
+  }
+  #parcours .card_metier .detail ul li {
+    margin: 10px auto;
+  }
+  #parcours .card_diplome_metier {
+    height: 260px;
+  }
+  #parcours .card_diplome_metier .titre h3 {
+    width: 80%;
+    left: 145px;
+  }
+  #parcours .card_diplome_metier .titre img {
+    width: 67px;
+    margin: 0 40px;
+  }
+  #parcours .card_diplome_metier p {
+    margin: 0 0 10px 149px;
+  }
+  #parcours .card_diplome_metier .detail {
+    margin: 40px 120px;
+    width: 86%;
+  }
+  #parcours .card_diplome_metier .detail ul li {
+    margin: 10px auto;
+  }
+  #parcours .card_diplome_gea {
+    height: 190px;
+  }
+  #parcours .card_diplome_gea .titre h3 {
+    width: 80%;
+    left: 145px;
+  }
+  #parcours .card_diplome_gea .titre img {
+    width: 67px;
+    margin: 0 40px;
+  }
+  #parcours .card_diplome_gea p {
+    margin: 0 0 10px 149px;
+  }
+  #parcours .card_diplome_gea .detail {
+    margin: 40px 120px;
+    width: 86%;
+  }
+  #parcours .card_diplome_gea .detail ul li {
+    margin: 10px auto;
+  }
+}
+
 #realisations {
   padding-bottom: 80px;
 }
@@ -1305,16 +1710,15 @@ header .titre {
 }
 
 #realisations .card :hover .vitrine {
-  opacity: 0;
-  -webkit-transition: opacity 500ms;
-  transition: opacity 500ms;
+  opacity: 0.4;
+  -webkit-transition: opacity 1000ms;
+  transition: opacity 1000ms;
 }
 
 #realisations .card :hover .etiquettes {
-  display: block;
   opacity: 1;
-  -webkit-transition: opacity 500ms;
-  transition: opacity 500ms;
+  -webkit-transition: opacity 1000ms;
+  transition: opacity 1000ms;
 }
 
 #realisations .card .vitrine {
@@ -1337,8 +1741,33 @@ header .titre {
   bottom: 0;
   left: 0;
   right: 0;
-  display: none;
   opacity: 0;
+  width: 420px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#realisations .card .etiquettes p {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  background-color: rgba(255, 66, 85, 0.6);
+  border-radius: 15px;
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 30px;
 }
 
 @media (min-width: 360px) {
@@ -1356,6 +1785,23 @@ header .titre {
 @media (min-width: 768px) {
   #realisations .card {
     height: 353px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #realisations .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #realisations .flex .card {
+    width: 540px;
+    height: 262px;
   }
 }
 
