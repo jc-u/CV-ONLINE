@@ -206,7 +206,10 @@
 }
 @media (min-width: 1280px) {
   #realisations {
+    padding-bottom: 100px;
     h2 {
+      padding: 100px 0;
+      text-align: unset;
     }
     .flex {
       display: flex;
