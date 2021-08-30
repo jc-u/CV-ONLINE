@@ -1555,3 +1555,308 @@
     }
   }
 }
+@media (min-width: 1920px) {
+  #parcours {
+    h2 {
+      &::after {
+        left: 310px;
+      }
+    }
+
+    .date {
+      position: absolute;
+      left: 186px;
+      top: 18%;
+      &::after {
+        display: block;
+        content: "";
+        width: 22px;
+        height: 22px;
+        border-radius: 20px;
+        background: $gris;
+        position: absolute;
+        top: 3px;
+        right: -46px;
+      }
+    }
+
+    .card_diplomeweb {
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 0;
+        width: 0;
+        border-right: 11px solid transparent;
+        border-bottom: 19px solid white;
+        border-left: 11px solid transparent;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 18%;
+        left: 370px;
+      }
+      .titre {
+        h3 {
+        }
+        img {
+        }
+      }
+
+      p {
+      }
+
+      .detail {
+        ul {
+          li {
+          }
+        }
+      }
+    }
+    .date_2021 {
+      position: absolute;
+      left: 186px;
+      top: 35%;
+      &::after {
+        display: block;
+        content: "";
+        width: 22px;
+        height: 22px;
+        border-radius: 20px;
+        background: $gris;
+        position: absolute;
+        top: 3px;
+        right: -46px;
+      }
+      p {
+        margin-top: -24px;
+      }
+    }
+    .card_stage {
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 0;
+        width: 0;
+        border-right: 11px solid transparent;
+        border-bottom: 19px solid white;
+        border-left: 11px solid transparent;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 35%;
+        left: 370px;
+      }
+      .titre {
+        h3 {
+        }
+        img {
+        }
+      }
+
+      p {
+      }
+
+      .detail {
+        ul {
+          li {
+          }
+        }
+      }
+    }
+
+    .date_2020 {
+      position: absolute;
+      left: 186px;
+      top: 52%;
+      &::after {
+        display: block;
+        content: "";
+        width: 22px;
+        height: 22px;
+        border-radius: 20px;
+        background: $gris;
+        position: absolute;
+        top: 3px;
+        right: -38px;
+      }
+      p {
+        margin-top: -24px;
+      }
+    }
+    .card_formation {
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 0;
+        width: 0;
+        border-right: 11px solid transparent;
+        border-bottom: 19px solid white;
+        border-left: 11px solid transparent;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 52%;
+        left: 370px;
+      }
+      .titre {
+        h3 {
+        }
+        img {
+        }
+      }
+
+      p {
+      }
+
+      .detail {
+        ul {
+          li {
+          }
+        }
+      }
+    }
+
+    .date_2011 {
+      position: absolute;
+      left: 137px;
+      top: 68%;
+      &::after {
+        display: block;
+        content: "";
+        width: 22px;
+        height: 22px;
+        border-radius: 20px;
+        background: $gris;
+        position: absolute;
+        top: 3px;
+        right: -38px;
+      }
+      p {
+        margin-top: -24px;
+      }
+    }
+    .card_metier {
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 0;
+        width: 0;
+        border-right: 11px solid transparent;
+        border-bottom: 19px solid white;
+        border-left: 11px solid transparent;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 68%;
+        left: 370px;
+      }
+      .titre {
+        h3 {
+        }
+        img {
+        }
+      }
+
+      p {
+      }
+
+      .detail {
+        ul {
+          li {
+          }
+        }
+      }
+    }
+    .date_2009 {
+      position: absolute;
+      left: 238px;
+      top: 82%;
+      &::after {
+        display: block;
+        content: "";
+        width: 22px;
+        height: 22px;
+        border-radius: 20px;
+        background: $gris;
+        position: absolute;
+        top: 3px;
+        right: -38px;
+      }
+    }
+    .card_diplome_metier {
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 0;
+        width: 0;
+        border-right: 11px solid transparent;
+        border-bottom: 19px solid white;
+        border-left: 11px solid transparent;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 47%;
+        left: -22px;
+      }
+      .titre {
+        h3 {
+        }
+        img {
+        }
+      }
+
+      p {
+      }
+
+      .detail {
+        ul {
+          li {
+          }
+        }
+      }
+    }
+
+    .date_2008 {
+      position: absolute;
+      left: 238px;
+      top: 91%;
+      &::after {
+        display: block;
+        content: "";
+        width: 22px;
+        height: 22px;
+        border-radius: 20px;
+        background: $gris;
+        position: absolute;
+        top: 3px;
+        right: -38px;
+      }
+    }
+    .card_diplome_gea {
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 0;
+        width: 0;
+        border-right: 11px solid transparent;
+        border-bottom: 19px solid white;
+        border-left: 11px solid transparent;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 42%;
+        left: -22px;
+      }
+      .titre {
+        h3 {
+        }
+        img {
+        }
+      }
+
+      p {
+      }
+
+      .detail {
+        ul {
+          li {
+          }
+        }
+      }
+    }
+  }
+}

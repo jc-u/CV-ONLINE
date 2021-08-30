@@ -87,3 +87,41 @@
     }
   }
 }
+
+@media (min-width: 1600px) {
+  #contact {
+    h2 {
+    }
+
+    p {
+      strong {
+      }
+    }
+    .flex {
+      display: flex;
+      justify-content: space-around;
+      .card {
+        width: 40%;
+        height: 205px;
+        .tel {
+          height: 205px;
+          img {
+          }
+
+          p {
+            font-size: 41px;
+          }
+        }
+        .mail {
+          height: 205px;
+          img {
+          }
+
+          p {
+            font-size: 27px;
+          }
+        }
+      }
+    }
+  }
+}

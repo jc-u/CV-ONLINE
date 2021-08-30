@@ -94,3 +94,11 @@ header {
     }
   }
 }
+@media (min-width: 1920px) {
+  header {
+    .titre {
+      top: 40%;
+      left: 630px;
+    }
+  }
+}
