@@ -286,9 +286,22 @@ a {
     font-weight: bold;
     font-size: 21px;
     color: #656f73;
+    height: 100px;
+    line-height: 100px;
+  }
+  #desktop ul li:nth-child(1) {
+    line-height: 110px;
   }
   #desktop ul li a {
     color: #656f73;
+    display: block;
+    width: 200px;
+    text-align: center;
+  }
+  #desktop ul li a:hover {
+    background-color: rgba(255, 114, 42, 0.5);
+    -webkit-transition: 500ms;
+    transition: 500ms;
   }
   #mobile {
     display: none;
@@ -522,6 +535,34 @@ header .titre {
 #competences .card .frontend .titre img {
   width: 50px;
   opacity: 0.6;
+  animation-iteration-count: infinite;
+  animation-name: wiggle;
+  -webkit-animation-name: wiggle;
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+}
+
+@-webkit-keyframes wiggle {
+  0%,
+  100% {
+    -webkit-transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+  }
 }
 
 #competences .card .frontend .descriptif {
@@ -600,6 +641,34 @@ header .titre {
 #competences .card .backend .titre img {
   width: 50px;
   opacity: 0.6;
+  animation-iteration-count: infinite;
+  animation-name: wiggle;
+  -webkit-animation-name: wiggle;
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+}
+
+@-webkit-keyframes wiggle {
+  0%,
+  100% {
+    -webkit-transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+  }
 }
 
 #competences .card .backend .descriptif {
@@ -677,6 +746,34 @@ header .titre {
 
 #competences .card .CMS .titre img {
   width: 50px;
+  animation-iteration-count: infinite;
+  animation-name: wiggle;
+  -webkit-animation-name: wiggle;
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+}
+
+@-webkit-keyframes wiggle {
+  0%,
+  100% {
+    -webkit-transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+  }
 }
 
 #competences .card .CMS .descriptif {
@@ -751,6 +848,34 @@ header .titre {
 #competences .card .webdesign .titre img {
   width: 50px;
   opacity: 0.6;
+  animation-iteration-count: infinite;
+  animation-name: wiggle;
+  -webkit-animation-name: wiggle;
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+}
+
+@-webkit-keyframes wiggle {
+  0%,
+  100% {
+    -webkit-transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+  }
 }
 
 #competences .card .webdesign .descriptif {
@@ -821,6 +946,34 @@ header .titre {
 #competences .card .environnement .titre img {
   width: 50px;
   opacity: 0.6;
+  animation-iteration-count: infinite;
+  animation-name: wiggle;
+  -webkit-animation-name: wiggle;
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+}
+
+@-webkit-keyframes wiggle {
+  0%,
+  100% {
+    -webkit-transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+  }
 }
 
 #competences .card .environnement p {

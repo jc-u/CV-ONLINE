@@ -218,9 +218,22 @@
         font-weight: bold;
         font-size: 21px;
         color: $gris;
+        height: 100px;
+        line-height: 100px;
+        &:nth-child(1) {
+          line-height: 110px;
+        }
 
         a {
           color: $gris;
+          display: block;
+
+          width: 200px;
+          text-align: center;
+          &:hover {
+            background-color: rgba($color: #ff722a, $alpha: 0.5);
+            transition: 500ms;
+          }
         }
       }
     }
