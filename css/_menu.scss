@@ -228,7 +228,7 @@
           color: $gris;
           display: block;
 
-          width: 200px;
+          width: 140px;
           text-align: center;
           &:hover {
             background-color: rgba($color: #ff722a, $alpha: 0.5);
@@ -240,5 +240,30 @@
   }
   #mobile {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #toggle {
+  }
+  #desktop {
+    ul {
+      :nth-child(1) {
+        img {
+        }
+      }
+      li {
+        &:nth-child(1) {
+        }
+
+        a {
+          width: 160px;
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+  #mobile {
   }
 }

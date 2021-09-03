@@ -1059,3 +1059,155 @@
     }
   }
 }
+
+@media (min-width: 1600px) {
+  #competences {
+    h2 {
+    }
+
+    .frontendFull {
+      position: relative;
+      left: -100px;
+      .frontend {
+        .titre {
+          h3 {
+          }
+          img {
+          }
+        }
+
+        .descriptif {
+        }
+
+        .logo {
+          ul {
+            :nth-child(3) {
+              img {
+              }
+            }
+            li {
+              img {
+              }
+              p {
+              }
+            }
+          }
+        }
+      }
+    }
+    .backendFull {
+      position: relative;
+      left: 100px;
+      .backend {
+        .titre {
+          h3 {
+          }
+          img {
+          }
+        }
+
+        .descriptif {
+        }
+
+        .logo {
+          ul {
+            :nth-child(1) {
+              img {
+              }
+            }
+            li {
+              img {
+              }
+              p {
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .CMSFull {
+      position: relative;
+      left: -100px;
+      .CMS {
+        .titre {
+          h3 {
+          }
+          img {
+          }
+        }
+
+        .descriptif {
+        }
+
+        .logo {
+          ul {
+            :nth-child(1) {
+              img {
+              }
+            }
+            li {
+              img {
+              }
+              p {
+              }
+            }
+          }
+        }
+      }
+    }
+    .webdesignFull {
+      position: relative;
+      left: 100px;
+      .webdesign {
+        .titre {
+          h3 {
+          }
+          img {
+          }
+        }
+
+        .descriptif {
+        }
+
+        .logo {
+          ul {
+            :nth-child(1) {
+              img {
+              }
+            }
+            li {
+              img {
+              }
+              p {
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .environnementFull {
+      position: relative;
+      left: -100px;
+      .environnement {
+        .titre {
+          h3 {
+          }
+          img {
+          }
+        }
+
+        p {
+        }
+
+        .details {
+          .flex {
+          }
+          img {
+          }
+        }
+      }
+    }
+  }
+}
