@@ -295,6 +295,7 @@ a {
   #desktop ul li a {
     color: #656f73;
     display: block;
+    height: 100px;
     width: 140px;
     text-align: center;
   }

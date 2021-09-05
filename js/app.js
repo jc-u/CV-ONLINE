@@ -187,3 +187,61 @@ if (w >= 1600 && w <= 1920) {
     }
   });
 }
+
+if (w >= 1920) {
+  axe.style.display = "none";
+  axe.style.opacity = 0;
+  date1.style.opacity = 0;
+  diplome.style.opacity = 0;
+  date2.style.opacity = 0;
+  stage.style.opacity = 0;
+  date3.style.opacity = 0;
+  formation.style.opacity = 0;
+  date4.style.opacity = 0;
+  date5.style.opacity = 0;
+  date6.style.opacity = 0;
+  metier.style.opacity = 0;
+  diplomeMetier.style.opacity = 0;
+  diplomeGea.style.opacity = 0;
+
+  window.addEventListener("scroll", function (e) {
+    let sy = window.scrollY;
+
+    if (sy >= 3900) {
+      axe.style.display = "block";
+      axe.style.opacity = 1;
+      axe.style.transitionDuration = "4s";
+    }
+
+    if (sy >= 4400) {
+      date1.style.opacity = 1;
+      date1.classList.add("animate__animated", "animate__fadeIn");
+      diplome.classList.add("animate__animated", "animate__fadeIn");
+    }
+    if (sy >= 4900) {
+      date2.style.opacity = 1;
+      date2.classList.add("animate__animated", "animate__fadeIn");
+      stage.classList.add("animate__animated", "animate__fadeIn");
+    }
+    if (sy >= 5400) {
+      date3.style.opacity = 1;
+      date3.classList.add("animate__animated", "animate__fadeIn");
+      formation.classList.add("animate__animated", "animate__fadeIn");
+    }
+    if (sy >= 5800) {
+      date4.style.opacity = 1;
+      date4.classList.add("animate__animated", "animate__fadeIn");
+      metier.classList.add("animate__animated", "animate__fadeIn");
+    }
+    if (sy >= 6200) {
+      date5.style.opacity = 1;
+      date5.classList.add("animate__animated", "animate__fadeIn");
+      diplomeMetier.classList.add("animate__animated", "animate__fadeIn");
+    }
+    if (sy >= 6400) {
+      date6.style.opacity = 1;
+      date6.classList.add("animate__animated", "animate__fadeIn");
+      diplomeGea.classList.add("animate__animated", "animate__fadeIn");
+    }
+  });
+}
