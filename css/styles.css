@@ -618,7 +618,7 @@ header .titre img {
   border-radius: 30px;
   -webkit-box-shadow: 6px 6px 7px -1px #656f73;
           box-shadow: 6px 6px 7px -1px #656f73;
-  height: 320px;
+  height: 340px;
   position: relative;
 }
 
@@ -1056,6 +1056,7 @@ header .titre img {
 #competences .card .environnement .titre img {
   width: 50px;
   opacity: 0.6;
+  height: auto;
   animation-iteration-count: infinite;
   animation-name: wiggle;
   -webkit-animation-name: wiggle;
@@ -1099,10 +1100,12 @@ header .titre img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-height: 78px;
 }
 
 #competences .card .environnement .details .flex img {
   width: 20px;
+  max-height: 78px;
   opacity: 0.6;
 }
 
