@@ -7,8 +7,13 @@
           box-sizing: border-box;
 }
 
+body {
+  height: 100%;
+}
+
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 h1 {
@@ -91,8 +96,19 @@ a {
   transform: translatex(0);
 }
 
+.with--sidebar {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.site_cache {
+  display: none;
+}
+
 .with--sidebar .site_cache {
-  position: absolute;
+  display: block;
+  position: fixed;
   z-index: 50;
   top: 0px;
   left: 0px;
@@ -123,16 +139,18 @@ a {
 
 .with--sidebar #navmobile {
   display: block;
+  left: 0;
+  position: fixed;
 }
 
 #mobile {
-  position: absolute;
-  right: -320px;
+  position: fixed;
+  left: 100vw;
   top: 0;
-  bottom: 0;
   z-index: 99999;
   background-color: #656f73;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 #mobile .clearfix {
